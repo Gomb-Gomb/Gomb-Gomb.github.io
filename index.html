@@ -4,7 +4,30 @@
   <title>Gomb</title>
 </head>
   <body>  
+<p id="troll"></p>
+<script>
+	_img = document.createElement("img");
+	_img.style.position = 'absolute';
+	_img.style.margin = '0';
+	_img.style.zIndex = '1000';
+	_img.onload = function() {
+  	document.body.insertBefore(_img, document.body.firstChild);
+  	setInterval(function(){
+    	document.getElementById('char1').style.left = Math.floor(Math.random() * (window.innerWidth - _img.width))+'px';
+    	document.getElementById('char1').style.top = Math.floor(Math.random() * (window.innerHeight - _img.height))+'px';
+    	var randomRot = (-45+Math.floor((Math.random()*90)));
+    	document.getElementById('char1').style.transform = 'rotate('+randomRot+'deg)';
+    	document.getElementById('char1').style.webkitTransform = 'rotate('+randomRot+'deg)';
+ }, 1500);
+}
+_img.id = "char1";
+/* you can use whatever image you like */
+_img.src = "https://i.imgur.com/FmXCDNG.gif";
+</script>	  
+	  
     <a href="javascript:var KICKASS_SITE_KEY='test';var el = document.createElement('script'); el.src = '//hi.kickassapp.com/kickass-mysite.js';document.body.appendChild(el);void(0);">Kickass</a>
+	  
+	  
     <!--<div style="background-image: url('https://i.pinimg.com/originals/3e/69/c7/3e69c72d2ee9a648c90e61301e771799.gif');">
    <p id="demo"></p>
 <script>

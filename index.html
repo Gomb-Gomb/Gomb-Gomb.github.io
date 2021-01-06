@@ -3,13 +3,11 @@
 <head>
   <title>Gomb</title>
 	<style>  
-		
-	a{
-  mix-blend-mode: difference;
-}	
+	section {
+		mix-blend-mode: difference;
+		}
 		
 	body {
-	  mix-blend-mode: difference;
 	  cursor:not-allowed;
 	animation: colorchange 1s linear 1s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
@@ -35,7 +33,9 @@
 	</style>
 </head>
   <body>   
-		
+
+<section id="message">	  
+	  
 <p id="troll"></p>
 <script>
 	_img = document.createElement("img");
@@ -101,5 +101,6 @@ document.getElementById("demo").innerHTML = text;
 				</div>
 			</ul>
 		</footer>
+	</section>
   </body>
 </html>

@@ -28,8 +28,12 @@ document.getElementById("demo").innerHTML = text;
     		<ul>
         		<li><a href="mailto:abhinavcool42@gmail.com">email</a></li>
         		<li><a href="https://github.com/abhinavcool42">github.com/abhinavcool42</a></li>
-			audio { display:none;}
-			<audio autoplay="true" src="Bossfight - Milky Ways.mp3">
+				<div id="player">
+    					<audio controls autoplay hidden>
+     						<source src="Bossfight - Milky Ways.mp3" type="audio/mpeg">
+                				unsupported !! 
+    					</audio>
+				</div>
 			</ul>
 		</footer>
   </body>

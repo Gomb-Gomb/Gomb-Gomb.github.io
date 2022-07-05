@@ -1,1 +1,1 @@
-position = {"room":1,"area":1}
+position = {"room":476,"area":2}

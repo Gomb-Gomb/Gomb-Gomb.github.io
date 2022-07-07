@@ -1,6 +1,6 @@
 let settings = {
-    roomSize: 7,
-    baseSize: 20,
+    roomSize: 5,
+    baseSize: 10,
     borders: true,
     areaName: true,
     showLabels: true,

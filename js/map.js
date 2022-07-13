@@ -71,6 +71,7 @@ class MapRenderer {
         let text = new PointText(new Point(0, 0));
         text.fillColor = envColors.default;
         text.fontSize = 60;
+		text.fontFamily = "Lucida Console, monospace";
         text.content = this.area.areaName;
         if (this.area.getZIndex() !== 0) {
             text.content += " (" + this.area.getZIndex() + ")"
@@ -622,6 +623,7 @@ class MapRenderer {
         text.fontSize = 15;
         text.content = value.Text;
         text.justification = 'center';
+		text.fontFamily = "Lucida Console, monospace";
         text.locked = true;
         text.scale(1, -1)
     }

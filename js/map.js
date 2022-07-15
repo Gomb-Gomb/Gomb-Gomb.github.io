@@ -619,7 +619,7 @@ class MapRenderer {
 
     renderLabel(value) {
         let text = new PointText(new Point(this.calculateCoordinates(value.X) + this.calculateCoordinates(value.Width) / 2, this.calculateCoordinates(value.Y) - this.calculateCoordinates(value.Height) / 2));
-        text.fillColor = 'yellow';
+        text.fillColor = 'white';
         text.fontSize = 15;
         text.content = value.Text;
         text.justification = 'center';
